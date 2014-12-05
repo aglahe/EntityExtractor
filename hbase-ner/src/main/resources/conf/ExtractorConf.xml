@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>source.type</name>
+		<value>hbase</value>
+	</property>
+	<property>
+		<name>sink.type</name>
+		<value>hbase</value>
+	</property>
+	
+	<!--  Accumulo Info -->
+	<property>
+		<name>accumulo.instance</name>
+		<value>${accumulo.instance}</value>
+	</property>
+	<property>
+		<name>accumulo.zookeepers</name>
+		<value>${accumulo.zookeepers}</value>
+	</property>
+
+	<property>
+		<name>accumulo.user</name>
+		<value>${accumulo.user}</value>
+	</property>
+	<property>
+		<name>accumulo.password</name>
+		<value>${accumulo.password}</value>
+	</property>
+	
+	<!-- Table Names from the source and to the sink -->
+	<property>
+		<name>table.source</name>
+		<value>aaron-ee</value>
+	</property>
+	<property>
+		<name>table.sink</name>
+		<value>aaron-ee</value>
+	</property>
+
+</configuration>
